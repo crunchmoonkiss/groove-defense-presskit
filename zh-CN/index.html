@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Groove Defense — Kit de Imprensa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Groove Defense — 新闻资料包</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-primary: #0a0a0f;
@@ -16,7 +16,7 @@
       --accent-cyan-dim: rgba(0, 229, 255, 0.15);
       --accent-magenta: #ff2d78;
       --font-display: 'Orbitron', monospace;
-      --font-body: 'Inter', sans-serif;
+      --font-body: 'Noto Sans SC', 'Inter', sans-serif;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -75,6 +75,24 @@
     }
 
     nav .nav-links a:hover { color: var(--accent-cyan); }
+
+    .lang-switch {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-left: 32px;
+      padding: 4px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+
+    .lang-switch:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
 
     /* HERO */
     #hero {
@@ -199,18 +217,6 @@
       display: block;
     }
 
-    .placeholder {
-      background: var(--bg-tertiary);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      padding: 80px 20px;
-      color: var(--text-secondary);
-      font-size: 13px;
-    }
-
     /* ABOUT */
     #about {
       padding: 80px 0;
@@ -229,6 +235,13 @@
       font-weight: 700;
       margin-bottom: 24px;
       letter-spacing: 1px;
+    }
+
+    .section-title-zh {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 24px;
     }
 
     .about-description p {
@@ -259,7 +272,7 @@
     }
 
     .feature-list li::before {
-      content: '\25B8';
+      content: '▸';
       position: absolute;
       left: 0;
       color: var(--accent-cyan);
@@ -397,7 +410,6 @@
     }
 
     .logo-dark { background: var(--bg-primary); }
-    .logo-light { background: #e8e8ed; }
 
     /* TEAM */
     #team {
@@ -471,6 +483,7 @@
       .media-grid { grid-template-columns: 1fr 1fr; }
       .logo-grid { grid-template-columns: 1fr; }
       .hero-title { font-size: 28px; }
+      .traction-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -480,15 +493,15 @@
     <div class="container">
       <div class="logo">Groove Defense</div>
       <div class="nav-links">
-        <a href="#about">Sobre</a>
-        <a href="#media">Imagens</a>
-        <a href="#team">Equipe</a>
-        <a href="#contact">Contato</a>
-        <a href="../" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">English</a>
-        <a href="../ja/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">日本語</a>
-        <a href="../es/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">Español</a>
-        <a href="../de/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">Deutsch</a>
-        <a href="../zh-CN/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">简体中文</a>
+        <a href="#about">简介</a>
+        <a href="#media">媒体</a>
+        <a href="#team">团队</a>
+        <a href="#contact">联系</a>
+        <a href="../" class="lang-switch">English</a>
+        <a href="../ja/" class="lang-switch">日本語</a>
+        <a href="../pt-BR/" class="lang-switch">Português</a>
+        <a href="../es/" class="lang-switch">Español</a>
+        <a href="../de/" class="lang-switch">Deutsch</a>
       </div>
     </div>
   </nav>
@@ -497,47 +510,47 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="section-label">Kit de Imprensa</div>
+          <div class="section-label">Press Kit</div>
           <h1 class="hero-title">Groove Defense</h1>
-          <p class="hero-tagline">Sua defesa constroi a trilha sonora.</p>
+          <p class="hero-tagline">你的防御构建原声音轨。</p>
 
           <div class="hero-meta">
             <div class="meta-item">
-              <span class="meta-label">Desenvolvedora</span>
+              <span class="meta-label">开发商</span>
               <span class="meta-value">Crunch Moonkiss Studios</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">Plataforma</span>
+              <span class="meta-label">平台</span>
               <span class="meta-value">PC (Steam)</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">Lancamento</span>
-              <span class="meta-value">Dezembro de 2026</span>
+              <span class="meta-label">发售日期</span>
+              <span class="meta-value">2026年12月</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">Genero</span>
-              <span class="meta-value">Tower Defense / Musical</span>
+              <span class="meta-label">类型</span>
+              <span class="meta-value">塔防 / 音乐</span>
             </div>
           </div>
 
           <div class="hero-buttons">
             <a href="https://www.youtube.com/watch?v=2nrqiwzHQSA" class="btn btn-primary" target="_blank">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-              Assistir Trailer
+              观看预告片
             </a>
             <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" class="btn btn-secondary" target="_blank">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-              Pagina na Steam
+              Steam商店页面
             </a>
             <a href="https://github.com/crunchmoonkiss/groove-defense-presskit/releases/download/press-assets-v1/groove_defense_press_assets.zip" class="btn btn-secondary" download>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Baixar Assets (.zip)
+              下载素材包 (.zip)
             </a>
           </div>
         </div>
 
         <div class="hero-image">
-          <img src="../assets/capsules/header_capsule.png" alt="Groove Defense Header Capsule">
+          <img src="../assets/capsules/header_capsule.png" alt="Groove Defense 头图胶囊">
         </div>
       </div>
     </div>
@@ -547,70 +560,70 @@
     <div class="container">
       <div class="about-grid">
         <div>
-          <div class="section-label">Sobre o Jogo</div>
-          <h2 class="section-title">Construa Sua Defesa. Componha Sua Vitoria.</h2>
+          <div class="section-label">About the Game</div>
+          <h2 class="section-title-zh">构建防御，谱写胜利。</h2>
 
           <div class="about-description">
-            <p>Groove Defense e um jogo de tower defense onde posicionar torres nao apenas protege sua base, mas tambem cria a musica. Cada torre-instrumento que voce coloca adiciona uma nova camada a uma trilha sonora dinamica que evolui conforme voce joga.</p>
+            <p>Groove Defense是一款塔防游戏，放置防御塔不仅能保护你的基地，还能创造音乐。你放置的每一座乐器塔都会为一首动态演进的原声音轨增添新的音层，音乐随你的游戏实时生长。</p>
 
-            <p>Escolha entre quatro generos musicais distintos: 80s, 2010s, Slasher Flick e Synthwave, cada um com torres, inimigos e paletas sonoras unicas. Coloque uma torre de bateria e ouca o ritmo comecar. Adicione uma torre de baixo para preencher os graves. Empilhe sintetizadores para criar melodias envolventes. Sua estrategia de defesa se torna sua composicao.</p>
+            <p>从四种独特的音乐风格中选择：80年代、2010年代、砍杀片和合成波，每种风格都拥有独特的防御塔、敌人和声音调色板。放置一座鼓塔，节拍随即响起；加入贝斯塔填充低频；叠加合成器塔，旋律随之飙升。你的防御策略就是你的音乐创作。</p>
 
-            <p>Os inimigos se movem no ritmo da musica, entao o timing importa. Cada sessao cria uma faixa diferente com base nas suas escolhas, tornando cada partida uma experiencia musical unica.</p>
+            <p>敌人跟随节拍移动，因此时机至关重要。每一局游戏都会根据你的选择生成不同的音轨，让每次游玩都成为独一无二的音乐体验。</p>
 
-            <p>Tres modos mantem a experiencia sempre nova: Modo Tour para uma campanha estruturada, Jogo Livre para experimentacao aberta, e Rhythm Remix, um modo VSMR que remove a defesa e permite criar livremente com as ferramentas que voce desbloqueou.</p>
+            <p>三种模式保持体验常新：巡演模式提供结构化战役体验，自由演奏模式供你自由实验，节奏混音则是一种VSMR模式，抛开防御元素，让你用解锁的工具自由创作。</p>
           </div>
 
-          <div class="features-heading">Principais Recursos</div>
+          <div class="features-heading">核心特色</div>
           <ul class="feature-list">
-            <li>Cada torre e um instrumento real. O posicionamento constroi uma trilha sonora dinamica em tempo real</li>
-            <li>Quatro generos musicais (80s, 2010s, Slasher Flick, Synthwave), cada um com torres, inimigos e atmosferas distintas</li>
-            <li>Tres modos: Modo Tour (campanha), Jogo Livre (sandbox) e Rhythm Remix (modo VSMR)</li>
-            <li>Inimigos se movem no ritmo, entao o timing do posicionamento importa</li>
-            <li>Torres disparam no ritmo, criando loops de feedback tanto estrategicos quanto musicais</li>
-            <li>Cada partida gera uma faixa unica baseada nas suas escolhas de torres</li>
+            <li>每座防御塔都是一件真实乐器，放置即构建动态分层原声音轨</li>
+            <li>四种音乐风格（80年代、2010年代、砍杀片、合成波），各具独特的防御塔、敌人和氛围</li>
+            <li>三种模式：巡演模式（战役）、自由演奏（沙盒）、节奏混音（VSMR模式）</li>
+            <li>敌人跟随节拍移动，放置时机关乎战略全局</li>
+            <li>防御塔按节奏开火，同时创造战略与音乐的双重反馈循环</li>
+            <li>每次游玩都根据你的塔选择生成独一无二的音轨</li>
           </ul>
         </div>
 
         <div class="factsheet">
-          <h3>Ficha Tecnica</h3>
+          <h3>Factsheet</h3>
           <div class="fact-row">
-            <div class="fact-label">Desenvolvedora</div>
+            <div class="fact-label">开发商</div>
             <div class="fact-value">Crunch Moonkiss Studios</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Localizacao</div>
-            <div class="fact-value">Nova York, EUA</div>
+            <div class="fact-label">所在地</div>
+            <div class="fact-value">美国纽约</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Plataforma</div>
+            <div class="fact-label">平台</div>
             <div class="fact-value">PC (Steam)</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Lancamento</div>
-            <div class="fact-value">Dezembro de 2026</div>
+            <div class="fact-label">发售日期</div>
+            <div class="fact-value">2026年12月</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Genero</div>
-            <div class="fact-value">Tower Defense / Musical</div>
+            <div class="fact-label">类型</div>
+            <div class="fact-value">塔防 / 音乐</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Modos</div>
-            <div class="fact-value">Tour / Jogo Livre / Rhythm Remix</div>
+            <div class="fact-label">模式</div>
+            <div class="fact-value">巡演 / 自由演奏 / 节奏混音</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Preco</div>
-            <div class="fact-value">A definir</div>
+            <div class="fact-label">售价</div>
+            <div class="fact-value">待定</div>
           </div>
           <div class="fact-row">
             <div class="fact-label">Steam</div>
-            <div class="fact-value"><a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Pagina na Loja</a></div>
+            <div class="fact-value"><a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">商店页面</a></div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Demo</div>
-            <div class="fact-value"><a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Jogar na Steam</a></div>
+            <div class="fact-label">试玩</div>
+            <div class="fact-value"><a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">在Steam上试玩</a></div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Contato para Imprensa</div>
+            <div class="fact-label">媒体联络</div>
             <div class="fact-value"><a href="mailto:CrunchMoonkiss@gmail.com">CrunchMoonkiss@gmail.com</a></div>
           </div>
         </div>
@@ -620,22 +633,22 @@
 
   <section id="traction">
     <div class="container">
-      <div class="section-label">Reconhecimento</div>
-      <h2 class="section-title">Reconhecimento</h2>
-      <p class="traction-intro">Groove Defense foi selecionado e destaque em grandes plataformas de descoberta indie.</p>
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title-zh">荣誉与成就</h2>
+      <p class="traction-intro">Groove Defense已在多个主要独立游戏展示平台获得选送和推荐。</p>
 
       <div class="traction-grid">
         <div class="traction-item">
           <div class="traction-highlight">Steam Tower Defense Fest 2026</div>
-          <div class="traction-detail">Selecao Oficial — 9 a 16 de marco de 2026</div>
+          <div class="traction-detail">官方入选 — 2026年3月9日至16日</div>
         </div>
         <div class="traction-item">
           <div class="traction-highlight">Infinite Start</div>
-          <div class="traction-detail">Destaque no lancamento da pagina Steam</div>
+          <div class="traction-detail">Steam页面上线时获得推荐</div>
         </div>
         <div class="traction-item">
-          <div class="traction-highlight">Itch.io Top 10 Tower Defense</div>
-          <div class="traction-detail">Classificado entre mais de 11.000 titulos</div>
+          <div class="traction-highlight">Itch.io 塔防类 Top 10</div>
+          <div class="traction-detail">在11,000+款作品中脱颖而出</div>
         </div>
       </div>
     </div>
@@ -643,30 +656,30 @@
 
   <section id="media">
     <div class="container">
-      <div class="section-label">Imagens</div>
-      <h2 class="section-title">Capturas de Tela e Assets</h2>
+      <div class="section-label">Media</div>
+      <h2 class="section-title-zh">截图与素材</h2>
 
       <div class="media-grid">
         <div class="media-item">
-          <img src="../assets/screenshots/screenshot_1.jpg" alt="Groove Defense Captura de Tela 1">
+          <img src="../assets/screenshots/screenshot_1.jpg" alt="Groove Defense 截图 1">
         </div>
         <div class="media-item">
-          <img src="../assets/screenshots/screenshot_2.jpg" alt="Groove Defense Captura de Tela 2">
+          <img src="../assets/screenshots/screenshot_2.jpg" alt="Groove Defense 截图 2">
         </div>
         <div class="media-item">
-          <img src="../assets/screenshots/screenshot_3.jpg" alt="Groove Defense Captura de Tela 3">
+          <img src="../assets/screenshots/screenshot_3.jpg" alt="Groove Defense 截图 3">
         </div>
         <div class="media-item">
-          <img src="../assets/screenshots/screenshot_4.jpg" alt="Groove Defense Captura de Tela 4">
+          <img src="../assets/screenshots/screenshot_4.jpg" alt="Groove Defense 截图 4">
         </div>
         <div class="media-item">
-          <img src="../assets/screenshots/screenshot_5.jpg" alt="Groove Defense Captura de Tela 5">
+          <img src="../assets/screenshots/screenshot_5.jpg" alt="Groove Defense 截图 5">
         </div>
         <div class="media-item">
-          <img src="../assets/screenshots/screenshot_6.jpg" alt="Groove Defense Captura de Tela 6">
+          <img src="../assets/screenshots/screenshot_6.jpg" alt="Groove Defense 截图 6">
         </div>
         <div class="media-item">
-          <img src="../assets/screenshots/screenshot_7.png" alt="Groove Defense Captura de Tela 7">
+          <img src="../assets/screenshots/screenshot_7.png" alt="Groove Defense 截图 7">
         </div>
       </div>
     </div>
@@ -674,20 +687,20 @@
 
   <section id="capsules">
     <div class="container">
-      <div class="section-label">Arte Principal</div>
-      <h2 class="section-title">Arte das Capsulas</h2>
+      <div class="section-label">Key Art</div>
+      <h2 class="section-title-zh">胶囊图</h2>
 
       <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-top: 32px;">
         <div class="media-item">
-          <img src="../assets/capsules/main_capsule.png" alt="Groove Defense Capsula Principal">
+          <img src="../assets/capsules/main_capsule.png" alt="Groove Defense 主胶囊图">
         </div>
         <div class="media-item">
-          <img src="../assets/capsules/vertical_capsule.png" alt="Groove Defense Capsula Vertical">
+          <img src="../assets/capsules/vertical_capsule.png" alt="Groove Defense 竖版胶囊图">
         </div>
       </div>
       <div style="margin-top: 16px;">
         <div class="media-item">
-          <img src="../assets/capsules/header_capsule.png" alt="Groove Defense Capsula Header">
+          <img src="../assets/capsules/header_capsule.png" alt="Groove Defense 头图胶囊">
         </div>
       </div>
     </div>
@@ -695,8 +708,8 @@
 
   <section id="logos">
     <div class="container">
-      <div class="section-label">Identidade Visual</div>
-      <h2 class="section-title">Logos</h2>
+      <div class="section-label">Branding</div>
+      <h2 class="section-title-zh">Logo</h2>
 
       <div class="logo-grid" style="grid-template-columns: 1fr;">
         <div class="logo-item logo-dark" style="padding: 40px; display: flex; align-items: center; justify-content: center;">
@@ -708,23 +721,23 @@
 
   <section id="team">
     <div class="container">
-      <div class="section-label">Equipe</div>
-      <h2 class="section-title">Sobre a Desenvolvedora</h2>
+      <div class="section-label">Team</div>
+      <h2 class="section-title-zh">关于开发者</h2>
 
       <div class="team-content">
-        <p class="team-bio">Crunch Moonkiss Studios e um estudio indie de uma pessoa so, fundado por um compositor premiado de trilhas para cinema, com selecoes em festivais e um premio de Melhor Compositor. Groove Defense combina uma solida formacao em composicao musical com a paixao por game design, nascido da ideia de que os jogadores deveriam ser os responsaveis por construir a trilha sonora, e nao apenas ouvi-la.</p>
+        <p class="team-bio">Crunch Moonkiss Studios是一间由获奖电影作曲家创立的一人独立工作室，创始人曾获多个电影节入选及最佳作曲奖。Groove Defense将深厚的音乐创作背景与游戏设计热情相结合，源自一个核心理念：玩家应该自己构建游戏配乐，而不仅仅是聆听它。</p>
       </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="container">
-      <div class="section-label">Contato</div>
-      <h2 class="section-title">Entre em Contato</h2>
+      <div class="section-label">Contact</div>
+      <h2 class="section-title-zh">联系我们</h2>
 
       <div class="contact-grid">
         <div class="contact-item">
-          <h3>Imprensa</h3>
+          <h3>媒体咨询</h3>
           <a href="mailto:CrunchMoonkiss@gmail.com">CrunchMoonkiss@gmail.com</a>
         </div>
         <div class="contact-item">
@@ -733,11 +746,11 @@
         </div>
         <div class="contact-item">
           <h3>Steam</h3>
-          <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Pagina na Loja</a>
+          <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">商店页面</a>
         </div>
         <div class="contact-item">
-          <h3>Demo</h3>
-          <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Jogar na Steam</a>
+          <h3>试玩</h3>
+          <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">在Steam上试玩</a>
         </div>
       </div>
     </div>
@@ -745,7 +758,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Crunch Moonkiss Studios. Todos os direitos reservados. | Ultima atualizacao: Fevereiro de 2026</p>
+      <p>&copy; 2026 Crunch Moonkiss Studios. All rights reserved. | 最后更新：2026年2月</p>
     </div>
   </footer>
 
