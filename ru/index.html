@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Groove Defense — Press Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Groove Defense — Пресс-кит</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-primary: #0a0a0f;
@@ -16,7 +16,7 @@
       --accent-cyan-dim: rgba(0, 229, 255, 0.15);
       --accent-magenta: #ff2d78;
       --font-display: 'Orbitron', monospace;
-      --font-body: 'Inter', sans-serif;
+      --font-body: 'Noto Sans', 'Inter', sans-serif;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -75,6 +75,24 @@
     }
 
     nav .nav-links a:hover { color: var(--accent-cyan); }
+
+    .lang-switch {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-left: 32px;
+      padding: 4px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+
+    .lang-switch:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
 
     /* HERO */
     #hero {
@@ -259,7 +277,7 @@
     }
 
     .feature-list li::before {
-      content: '▸';
+      content: '\25B8';
       position: absolute;
       left: 0;
       color: var(--accent-cyan);
@@ -471,6 +489,7 @@
       .media-grid { grid-template-columns: 1fr 1fr; }
       .logo-grid { grid-template-columns: 1fr; }
       .hero-title { font-size: 28px; }
+      .traction-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -480,17 +499,17 @@
     <div class="container">
       <div class="logo">Groove Defense</div>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#media">Media</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
-        <a href="ja/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">日本語</a>
-        <a href="pt-BR/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">Português</a>
-        <a href="es/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">Español</a>
-        <a href="de/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">Deutsch</a>
-        <a href="zh-CN/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">简体中文</a>
-        <a href="ko/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">한국어</a>
-        <a href="ru/" style="font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">Русский</a>
+        <a href="#about">Об игре</a>
+        <a href="#media">Медиа</a>
+        <a href="#team">Команда</a>
+        <a href="#contact">Контакты</a>
+        <a href="../" class="lang-switch">English</a>
+        <a href="../ja/" class="lang-switch">日本語</a>
+        <a href="../pt-BR/" class="lang-switch">Português</a>
+        <a href="../es/" class="lang-switch">Español</a>
+        <a href="../de/" class="lang-switch">Deutsch</a>
+        <a href="../zh-CN/" class="lang-switch">简体中文</a>
+        <a href="../ko/" class="lang-switch">한국어</a>
       </div>
     </div>
   </nav>
@@ -499,47 +518,47 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="section-label">Press Kit</div>
+          <div class="section-label">Пресс-кит</div>
           <h1 class="hero-title">Groove Defense</h1>
-          <p class="hero-tagline">Your defense builds the soundtrack.</p>
+          <p class="hero-tagline">Ваша оборона создаёт саундтрек.</p>
 
           <div class="hero-meta">
             <div class="meta-item">
-              <span class="meta-label">Developer</span>
+              <span class="meta-label">Разработчик</span>
               <span class="meta-value">Crunch Moonkiss Studios</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">Platform</span>
-              <span class="meta-value">PC (Steam)</span>
+              <span class="meta-label">Платформа</span>
+              <span class="meta-value">ПК (Steam)</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">Release</span>
-              <span class="meta-value">December 2026</span>
+              <span class="meta-label">Релиз</span>
+              <span class="meta-value">Декабрь 2026</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">Genre</span>
-              <span class="meta-value">Tower Defense / Music</span>
+              <span class="meta-label">Жанр</span>
+              <span class="meta-value">Защита башен / Музыка</span>
             </div>
           </div>
 
           <div class="hero-buttons">
             <a href="https://www.youtube.com/watch?v=2nrqiwzHQSA" class="btn btn-primary" target="_blank">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-              Watch Trailer
+              Смотреть трейлер
             </a>
             <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" class="btn btn-secondary" target="_blank">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-              Steam Page
+              Страница в Steam
             </a>
-            <a href="assets/downloads/groove_defense_press_assets.zip" class="btn btn-secondary" download>
+            <a href="../assets/downloads/groove_defense_press_assets.zip" class="btn btn-secondary" download>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Download Assets (.zip)
+              Скачать материалы (.zip)
             </a>
           </div>
         </div>
 
         <div class="hero-image">
-          <img src="assets/capsules/header_capsule.png" alt="Groove Defense Header Capsule">
+          <img src="../assets/capsules/header_capsule.png" alt="Groove Defense Header Capsule">
         </div>
       </div>
     </div>
@@ -549,70 +568,70 @@
     <div class="container">
       <div class="about-grid">
         <div>
-          <div class="section-label">About the Game</div>
-          <h2 class="section-title">Build Your Defense. Compose Your Victory.</h2>
+          <div class="section-label">Об игре</div>
+          <h2 class="section-title">Постройте оборону. Сочините свою победу.</h2>
 
           <div class="about-description">
-            <p>Groove Defense is a tower defense game where placing towers doesn't just protect your base, it creates the music. Each instrument tower you place adds a new layer to a dynamic, evolving soundtrack that builds as you play.</p>
+            <p>Groove Defense — это игра в жанре защиты башен, где размещение башен не просто защищает вашу базу, а создаёт музыку. Каждая установленная башня-инструмент добавляет новый слой к динамичному, развивающемуся саундтреку, который формируется по мере игры.</p>
 
-            <p>Choose from four distinct musical genres: 80s, 2010s, Slasher Flick, and Synthwave, each with unique towers, enemies, and sonic palettes. Place a drum tower and hear the beat drop. Add a bass tower to fill out the low end. Stack synths to create soaring melodies. Your defense strategy becomes your composition.</p>
+            <p>Выбирайте из четырёх уникальных музыкальных жанров: 80-е, 2010-е, Slasher Flick и Synthwave — каждый с собственными башнями, врагами и звуковой палитрой. Поставьте барабанную башню и услышьте, как вступает ритм. Добавьте басовую башню, чтобы заполнить низкие частоты. Наслаивайте синтезаторы для создания парящих мелодий. Ваша оборонительная стратегия становится вашей композицией.</p>
 
-            <p>Enemies move to the beat, so timing matters. Every session creates a different track based on your choices, making each playthrough a unique musical experience.</p>
+            <p>Враги двигаются в такт музыке, поэтому тайминг имеет значение. Каждая сессия создаёт уникальный трек на основе ваших решений, делая каждое прохождение неповторимым музыкальным опытом.</p>
 
-            <p>Three modes keep the experience fresh: Tour Mode for a structured campaign, Free Play for open experimentation, and Rhythm Remix, a VSMR mode that strips away the defense and lets you create freely with the tools you've unlocked.</p>
+            <p>Три режима поддерживают разнообразие: Тур-режим для структурированной кампании, Свободная игра для открытых экспериментов и Rhythm Remix — режим VSMR, который убирает оборону и позволяет свободно творить с помощью разблокированных инструментов.</p>
           </div>
 
-          <div class="features-heading">Key Features</div>
+          <div class="features-heading">Ключевые особенности</div>
           <ul class="feature-list">
-            <li>Every tower is a real instrument. Placement builds a dynamic, layered soundtrack in real time</li>
-            <li>Four musical genres (80s, 2010s, Slasher Flick, Synthwave) each with distinct towers, enemies, and vibes</li>
-            <li>Three modes: Tour Mode (campaign), Free Play (sandbox), and Rhythm Remix (VSMR mode)</li>
-            <li>Enemies move on beat, so timing your placement matters</li>
-            <li>Towers fire in rhythm, creating both strategic and musical feedback loops</li>
-            <li>Every playthrough generates a unique track based on your tower choices</li>
+            <li>Каждая башня — настоящий инструмент. Размещение создаёт динамичный, многослойный саундтрек в реальном времени</li>
+            <li>Четыре музыкальных жанра (80-е, 2010-е, Slasher Flick, Synthwave) — каждый с уникальными башнями, врагами и атмосферой</li>
+            <li>Три режима: Тур-режим (кампания), Свободная игра (песочница) и Rhythm Remix (режим VSMR)</li>
+            <li>Враги двигаются в такт, поэтому тайминг размещения имеет значение</li>
+            <li>Башни стреляют в ритм, создавая как стратегические, так и музыкальные обратные связи</li>
+            <li>Каждое прохождение генерирует уникальный трек на основе выбранных башен</li>
           </ul>
         </div>
 
         <div class="factsheet">
-          <h3>Factsheet</h3>
+          <h3>Информация</h3>
           <div class="fact-row">
-            <div class="fact-label">Developer</div>
+            <div class="fact-label">Разработчик</div>
             <div class="fact-value">Crunch Moonkiss Studios</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Location</div>
-            <div class="fact-value">New York, NY</div>
+            <div class="fact-label">Местоположение</div>
+            <div class="fact-value">Нью-Йорк, штат Нью-Йорк</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Platform</div>
-            <div class="fact-value">PC (Steam)</div>
+            <div class="fact-label">Платформа</div>
+            <div class="fact-value">ПК (Steam)</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Release</div>
-            <div class="fact-value">December 2026</div>
+            <div class="fact-label">Релиз</div>
+            <div class="fact-value">Декабрь 2026</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Genre</div>
-            <div class="fact-value">Tower Defense / Music</div>
+            <div class="fact-label">Жанр</div>
+            <div class="fact-value">Защита башен / Музыка</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Modes</div>
-            <div class="fact-value">Tour / Free Play / Rhythm Remix</div>
+            <div class="fact-label">Режимы</div>
+            <div class="fact-value">Тур / Свободная игра / Rhythm Remix</div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Price</div>
-            <div class="fact-value">TBD</div>
+            <div class="fact-label">Цена</div>
+            <div class="fact-value">Уточняется</div>
           </div>
           <div class="fact-row">
             <div class="fact-label">Steam</div>
-            <div class="fact-value"><a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Store Page</a></div>
+            <div class="fact-value"><a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Страница в магазине</a></div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Demo</div>
-            <div class="fact-value"><a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Play on Steam</a></div>
+            <div class="fact-label">Демо</div>
+            <div class="fact-value"><a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Играть в Steam</a></div>
           </div>
           <div class="fact-row">
-            <div class="fact-label">Press Contact</div>
+            <div class="fact-label">Пресс-контакт</div>
             <div class="fact-value"><a href="mailto:CrunchMoonkiss@gmail.com">CrunchMoonkiss@gmail.com</a></div>
           </div>
         </div>
@@ -622,22 +641,22 @@
 
   <section id="traction">
     <div class="container">
-      <div class="section-label">Recognition</div>
-      <h2 class="section-title">Recognition</h2>
-      <p class="traction-intro">Groove Defense has been selected and featured across major indie discovery platforms.</p>
+      <div class="section-label">Признание</div>
+      <h2 class="section-title">Признание</h2>
+      <p class="traction-intro">Groove Defense была отобрана и представлена на крупных платформах для открытия инди-игр.</p>
 
       <div class="traction-grid">
         <div class="traction-item">
           <div class="traction-highlight">Steam Tower Defense Fest 2026</div>
-          <div class="traction-detail">Official Selection — March 9–16, 2026</div>
+          <div class="traction-detail">Официальный отбор — 9–16 марта 2026</div>
         </div>
         <div class="traction-item">
           <div class="traction-highlight">Infinite Start</div>
-          <div class="traction-detail">Featured at Steam page launch</div>
+          <div class="traction-detail">Представлена на запуске страницы в Steam</div>
         </div>
         <div class="traction-item">
           <div class="traction-highlight">Itch.io Top 10 Tower Defense</div>
-          <div class="traction-detail">Ranked among 11,000+ titles</div>
+          <div class="traction-detail">В числе лучших среди 11 000+ игр</div>
         </div>
       </div>
     </div>
@@ -645,21 +664,21 @@
 
   <section id="media">
     <div class="container">
-      <div class="section-label">Media</div>
-      <h2 class="section-title">Screenshots & Assets</h2>
+      <div class="section-label">Медиа</div>
+      <h2 class="section-title">Скриншоты и материалы</h2>
 
       <div class="media-grid" style="grid-template-columns: repeat(2, 1fr);">
         <div class="media-item">
-          <img src="assets/screenshots/screenshot_1.png" alt="Groove Defense — 80s Level">
+          <img src="../assets/screenshots/screenshot_1.png" alt="Groove Defense — уровень 80-х">
         </div>
         <div class="media-item">
-          <img src="assets/screenshots/screenshot_2.png" alt="Groove Defense — Synthwave Level">
+          <img src="../assets/screenshots/screenshot_2.png" alt="Groove Defense — уровень Synthwave">
         </div>
         <div class="media-item">
-          <img src="assets/screenshots/screenshot_3.png" alt="Groove Defense — 2010s Level">
+          <img src="../assets/screenshots/screenshot_3.png" alt="Groove Defense — уровень 2010-х">
         </div>
         <div class="media-item">
-          <img src="assets/screenshots/screenshot_4.png" alt="Groove Defense — Slasher Flick Level">
+          <img src="../assets/screenshots/screenshot_4.png" alt="Groove Defense — уровень Slasher Flick">
         </div>
       </div>
     </div>
@@ -667,20 +686,20 @@
 
   <section id="capsules">
     <div class="container">
-      <div class="section-label">Key Art</div>
-      <h2 class="section-title">Capsule Art</h2>
+      <div class="section-label">Ключевой арт</div>
+      <h2 class="section-title">Капсульный арт</h2>
 
       <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-top: 32px;">
         <div class="media-item">
-          <img src="assets/capsules/main_capsule.png" alt="Groove Defense Main Capsule">
+          <img src="../assets/capsules/main_capsule.png" alt="Groove Defense Main Capsule">
         </div>
         <div class="media-item">
-          <img src="assets/capsules/vertical_capsule.png" alt="Groove Defense Vertical Capsule">
+          <img src="../assets/capsules/vertical_capsule.png" alt="Groove Defense Vertical Capsule">
         </div>
       </div>
       <div style="margin-top: 16px;">
         <div class="media-item">
-          <img src="assets/capsules/header_capsule.png" alt="Groove Defense Header Capsule">
+          <img src="../assets/capsules/header_capsule.png" alt="Groove Defense Header Capsule">
         </div>
       </div>
     </div>
@@ -688,12 +707,12 @@
 
   <section id="logos">
     <div class="container">
-      <div class="section-label">Branding</div>
-      <h2 class="section-title">Logos</h2>
+      <div class="section-label">Брендинг</div>
+      <h2 class="section-title">Логотипы</h2>
 
       <div class="logo-grid" style="grid-template-columns: 1fr;">
         <div class="logo-item logo-dark" style="padding: 40px; display: flex; align-items: center; justify-content: center;">
-          <img src="assets/logos/logo.png" alt="Groove Defense Logo" style="max-width: 400px; width: 100%; height: auto;">
+          <img src="../assets/logos/logo.png" alt="Логотип Groove Defense" style="max-width: 400px; width: 100%; height: auto;">
         </div>
       </div>
     </div>
@@ -701,23 +720,23 @@
 
   <section id="team">
     <div class="container">
-      <div class="section-label">Team</div>
-      <h2 class="section-title">About the Developer</h2>
+      <div class="section-label">Команда</div>
+      <h2 class="section-title">О разработчике</h2>
 
       <div class="team-content">
-        <p class="team-bio">Crunch Moonkiss Studios is a one-person indie studio founded by an award-winning film composer with festival selections and a Best Composer win. Groove Defense combines a deep background in music composition with a passion for game design, born from the idea that players should be the ones building the score, not just listening to it.</p>
+        <p class="team-bio">Crunch Moonkiss Studios — инди-студия одного человека, основанная отмеченным наградами кинокомпозитором с участием в фестивалях и победой в номинации «Лучший композитор». Groove Defense объединяет глубокий опыт в музыкальной композиции со страстью к геймдизайну и родилась из идеи, что именно игроки должны создавать саундтрек, а не просто слушать его.</p>
       </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="container">
-      <div class="section-label">Contact</div>
-      <h2 class="section-title">Get in Touch</h2>
+      <div class="section-label">Контакты</div>
+      <h2 class="section-title">Связаться с нами</h2>
 
       <div class="contact-grid">
         <div class="contact-item">
-          <h3>Press Inquiries</h3>
+          <h3>Пресс-запросы</h3>
           <a href="mailto:CrunchMoonkiss@gmail.com">CrunchMoonkiss@gmail.com</a>
         </div>
         <div class="contact-item">
@@ -726,11 +745,11 @@
         </div>
         <div class="contact-item">
           <h3>Steam</h3>
-          <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Store Page</a>
+          <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Страница в магазине</a>
         </div>
         <div class="contact-item">
-          <h3>Demo</h3>
-          <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Play on Steam</a>
+          <h3>Демо</h3>
+          <a href="https://store.steampowered.com/app/4100400/Groove_Defense/" target="_blank">Играть в Steam</a>
         </div>
       </div>
     </div>
@@ -738,7 +757,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Crunch Moonkiss Studios. All rights reserved. | Last updated: March 2026</p>
+      <p>&copy; 2026 Crunch Moonkiss Studios. Все права защищены. | Последнее обновление: март 2026</p>
     </div>
   </footer>
 
